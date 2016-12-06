@@ -63,26 +63,26 @@ var isInmenu1 = false;
 var isInmenu4 = false;
 var isInmenu8 = false;
 
-// menu1.onmouseenter = function() {
-//     isInmenu1 = true;
-// }
-// menu1.onmouseleave = function() {
-//     isInmenu1 = false;
-// }
-//
-// menu4.onmouseenter = function() {
-//     isInmenu4 = true;
-// }
-// menu4.onmouseleave = function() {
-//     isInmenu4 = false;
-// }
-//
-// menu8.onmouseenter = function() {
-//     isInmenu8 = true;
-// }
-// menu8.onmouseleave = function() {
-//     isInmenu8 = false;
-// }
+menu1.onmouseenter = function() {
+    isInmenu1 = true;
+}
+menu1.onmouseleave = function() {
+    isInmenu1 = false;
+}
+
+menu4.onmouseenter = function() {
+    isInmenu4 = true;
+}
+menu4.onmouseleave = function() {
+    isInmenu4 = false;
+}
+
+menu8.onmouseenter = function() {
+    isInmenu8 = true;
+}
+menu8.onmouseleave = function() {
+    isInmenu8 = false;
+}
 
 
 
@@ -108,7 +108,7 @@ function handleMouseDown(event) {
     subMenu4.style.display = "none";
     subMenu8.style.display = "none";
 
-    IsInMenu(event);
+  //  IsInMenu(event);
     if ((isInmenu1 || isInmenu4 || isInmenu8) && modeMove == false) {
         modeFix = true;
         if (isInmenu1) {
@@ -152,9 +152,9 @@ function handleMouseUp(event) {
     originX = 150;
     originY = 20;
 
-    isInmenu1 = false;
-    isInmenu4 = false;
-    isInmenu8 = false;
+//    isInmenu1 = false;
+//    isInmenu4 = false;
+//    isInmenu8 = false;
     circle.style.visibility = "hidden";
     if (isActiveMenu1 && isActiveFloatMenu == false) {
         disactiveSubMenu(subMenu1);
