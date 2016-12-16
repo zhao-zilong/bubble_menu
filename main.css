@@ -32,7 +32,7 @@ color: black !important;
 background: #DDA0DD;
 }
 
-#main:hover, #deep:hover, #subdeep:hover, #menu1:hover , #menu4:hover ,#menu8:hover
+#main:hover, #deep:hover, #subdeep:hover, #menu1:hover , #menu4:hover ,#menu8:hover, #undo:hover, #repeat:hover, #clear:hover,#select:hover
 {
   background:#9400D3 !important;
 }
